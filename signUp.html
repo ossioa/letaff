@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- tailwindcss -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="./js/tailwindcss.js"></script>
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+    />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <title>LeTaff</title>
+</head>
+<body>
+    <!-- div main -->
+    <div>
+        <!-- titre -->
+        <h1 class="text-center text-blue-600 text-[35px] mt-[50px]">S'enregistrer</h1>
+
+        <!-- div pour le formulaire -->
+        <div class="flex flex-col gap-10 my-[4%] mx-[30%] shadow-lg px-4 py-6 rounded">
+            <form action="index.html" class="flex flex-col gap-10">
+                <!-- champs et infos -->
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-2 items-center">
+                        <div><i class="fas fa-envelope text-[22px] text-blue-400"></i></div>
+                        <input type="text" class="px-2 py-2 border-blue-400 border-[1px] rounded w-full" placeholder="Email">
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <div><i class="fas fa-lock text-[22px] text-blue-400"></i></div>
+                        <input type="text" class="px-2 py-2 border-blue-400 border-[1px] rounded w-full" placeholder="Mot de passe">
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="flex gap-2">
+                        <input type="radio" name="" id="" value=""><span>Je suis un client : j'ai besoin de quelque chose de conçu</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <input type="radio" name="" id=""><span>Je suis un designer: je veux soumettre des dessins aux clients</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <span class="text-[11px] text-center">En cliquant ci-dessous pour vous inscrire, vous acceptez les conditions d'utilisation de LeTaff et la politique de confidentialité.</span>
+                    <button type="submit" class="bg-blue-500 rounded p-2 text-white font-semibold">S'inscrire</button>
+                </div>
+            </form>
+
+            <!-- Pour les compte tièrce -->
+            <div class="flex flex-col gap-5 ite">
+                <span class="text-center font-semibold">Ou</span>
+
+                <!-- les comptes -->
+                <div class="flex flex-col gap-5">
+                    <button class="flex gap-2 items-center rounded border-2 border-red-400 py-2 px-2"><i class="fab fa-google text-red-400 text-[28px]"></i>Se connecter avec Google</button>
+                    <button class="flex gap-2 items-center rounded border-2 border-blue-400 py-2 px-2"><i class="fab fa-facebook-f text-blue-600 text-[28px]"></i>Se connecter avec Facebook</button>
+                </div>
+
+                <span class="text-[15px] text-center">Disposez-vous déjà d'un compte ? <a href="login.html" class="text-blue-500">Se connecter</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
