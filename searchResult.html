@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- style -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    
+        <!-- tailwindcss -->
+        <link href="/dist/output.css" rel="stylesheet">
+        <script src="./js/tailwindcss.js"></script>
+    
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+        />
+    
+        <!-- fonts style -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    
+        <!-- font awesome style -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- nice select -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+    
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- responsive style -->
+        <link href="css/responsive.css" rel="stylesheet" />
+    
+        <title>letaff</title>
+    </head>
+<body>
+
+    <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Hirevac
+              </span>
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="job.html">Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="freelancer.html">Freelancers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>
+                      Login
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signUp.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>
+                      Sign Up
+                    </span>
+                  </a>
+                </li>
+                <form class="form-inline">
+                  <button class="btn   nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!-- la div principale -->
+    <div class="px-5 flex flex-col gap-8 mt-4 pb-20">
+        <!-- ici c'est pour les titres -->
+        <div class="flex gap-5">
+            <span>Parcourez les freelances :</span>
+            <span><a href="#" class="hover:text-blue-600 hover:underline underline-offset-1">Site web, mobile et logiciel</a></span>
+            <span><a href="#" class="hover:text-blue-600 hover:underline underline-offset-1">Service IA</a></span>
+            <span><a href="#" class="hover:text-blue-600 hover:underline underline-offset-1">Conception et création</a></span>
+            <span><a href="#" class="hover:text-blue-600 hover:underline underline-offset-1">Rédaction</a></span>
+            <span><a href="#" class="hover:text-blue-600 hover:underline underline-offset-1">Ventes et marketing</a></span>
+        </div>
+
+        <!-- ici c'est pour les deux div: gauche et droite -->
+        <div class="flex gap-8 px-20">
+            <!-- div de gauche -->
+            <div class="border p-4 rounded flex flex-col gap-5 h-[50%]">
+                <h1 class="text-2xl">Filtrer par</h1>
+
+                <!-- div du contenu -->
+                <div class="border-b flex flex-col gap-3 pb-3">
+                    <div class="flex justify-between items-center">
+                        <h2>Qualité de talent</h2>
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h2>Les mieux notés et plus</h2>
+                        </div>
+                        
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h2>Les étoiles</h2>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h2>Les talents</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- competances -->
+                <div class="flex flex-col gap-3 pb-3 border-b">
+                    <div class="flex justify-between items-center">
+                        <h1>Compétances</h1>
+                        <i class="fas fa-angle-up"></i>
+                    </div>
+
+                    <!-- liste des competances -->
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h1>JavaScript</h1>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h1>PHP</h1>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h1>WordPress</h1>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h1>HTML5</h1>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h1>CSS</h1>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <input type="checkbox" name="" id="">
+                            <h1>REACT</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- les emplacements -->
+                <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex justify-between">
+                            <h2>Emplacement</h2>
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+                        <input class="border-blue-800 border-2 rounded p-2 placeholder:text-[14px]" type="text" name="" id="" placeholder="Chercher un emplacement">
+                    </div>
+
+                    <div class="flex flex-col gap-3 pb-3 border-b">
+                        <div class="flex justify-between">
+                            <h2>Type de talent</h2>
+                            <i class="fas fa-angle-up"></i>
+                        </div>
+
+                        <div class="flex flex-col gap-3">
+                            <div class="flex gap-2">
+                                <input type="radio" name="freelance_agance" id="">
+                                <span>Agence et indépendants</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="radio" name="freelance_agance" id="">
+                                <span>Freelace indépendants</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="radio" name="freelance_agance" id="">
+                                <span>Organisme</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-7">
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between items-center">
+                                <h2>Catégorie</h2>
+                                <i class="fas fa-angle-up"></i>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <span class="text-blue-700 font-semibold">Toute les catégories</span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Administrateur</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Comptabilité & consultant</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Designer</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Ingénieur & créateur</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">IT & réseau</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Science D. & Analytique</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Service clients</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Ventes & marketing</a></span>
+                                <span><a href="" class="hover:text-blue-700 hover:underline">Web, Mobile & Dev Logiciel</a></span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between oitems-center">
+                            <h2>Succès de l'emploi</h2>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="flex justify-between oitems-center">
+                            <h2>Montant gagné</h2>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="flex justify-between oitems-center">
+                            <h2>Heure facturé</h2>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- div de droite -->
+            <div class="flex flex-col gap-8 rounded border p-4">
+                <!-- barre de recherche -->
+                <div class="flex border-b-2 pb-3">
+                    <input class="border-blue-800 border-y-2 border-l-2 rounded-l w-full px-2" type="text" name="" id="">
+                    <button class="bg-blue-800 rounded-r font-semibold text-white p-[10px]" type="submit">Rechercher</button>
+                </div>
+
+                <!-- profile -->
+                <div class="flex flex-col gap-5 border-b pb-4">
+                    <!-- photo -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <img class="w-[95px] rounded-[50%]" src="./images/profile.jpg" alt="">
+                                <div class="flex flex-col">
+                                    <span><a href="#" class="text-blue-800 font-semibold hover:underline">Marly M.</a></span>
+                                    <span class="text-gray-400">Libreville</span>
+                                </div>
+                            </div>
+                            <span class="flex items-center gap-2 p-[8px] rounded border-2 border-green-400"><i class="fas fa-bolt text-green-500"></i>Disponible maintenant</span>
+                        </div>
+
+                        <button class="flex gap-3 items-center border-2 p-[8px] rounded border-blue-700 font-semibold text-blue-600 hover:bg-blue-700 hover:text-white duration-[0.5s]"><i class="fas fa-heart"></i>invitation à l'emploi</button>
+                    </div>
+
+                    <!-- texte -->
+                    <div class="flex flex-col gap-5">
+                        <!-- 10 et 20 -->
+                        <div class="flex gap-24 items-center">
+                            <span>projet: 10</span>
+                            <span>4000.000f acquis</span>
+                        </div>
+
+                        <div class="flex flex-col gap-4 text-[15px]">
+                            <p>Développeur le mieux noté 373 Projet achevé avec succès 100 % de taux 
+                                de réussite de l'emploi Développeur Web à plein temps, concepteur de 
+                                sites Web, développeur Web, développement de WordPress, développement...
+                            </p>
+                            <p>Suggérer parce-qu'il a travaillé sur <a href="#" class="text-blue-700 hover:text-blue-700 hover:underline">44 emplois qui corespond à votre rechercher</a></p>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">JavaScript</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Conception React</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Developpement Web</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">PHP</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">WordPress</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Laravel</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5 border-b pb-4">
+                    <!-- photo -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <img class="w-[95px] rounded-[50%] bg-gray-200" src="./images/user.png" alt="">
+                                <div class="flex flex-col">
+                                    <span><a href="#" class="text-blue-800 font-semibold hover:underline">Manuella O.</a></span>
+                                    <span class="text-gray-400">Libreville</span>
+                                </div>
+                            </div>
+                            <span class="flex items-center gap-2 p-[8px] rounded border-2 border-green-400"><i class="fas fa-bolt text-green-500"></i>Disponible maintenant</span>
+                        </div>
+
+                        <button class="flex gap-3 items-center border-2 p-[8px] rounded border-blue-700 font-semibold text-blue-600 hover:bg-blue-700 hover:text-white duration-[0.5s]"><i class="fas fa-heart"></i>invitation à l'emploi</button>
+                    </div>
+
+                    <!-- texte -->
+                    <div class="flex flex-col gap-5">
+                        <!-- 10 et 20 -->
+                        <div class="flex gap-24 items-center">
+                            <span>projet: 10</span>
+                            <span>4000.000f acquis</span>
+                        </div>
+
+                        <div class="flex flex-col gap-4 text-[15px]">
+                            <p>Développeur le mieux noté 373 Projet achevé avec succès 100 % de taux 
+                                de réussite de l'emploi Développeur Web à plein temps, concepteur de 
+                                sites Web, développeur Web, développement de WordPress, développement...
+                            </p>
+                            <p>Suggérer parce-qu'il a travaillé sur <a href="#" class="text-blue-700 hover:text-blue-700 hover:underline">44 emplois qui corespond à votre rechercher</a></p>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">JavaScript</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Conception React</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Developpement Web</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">PHP</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">WordPress</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Laravel</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <!-- photo -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex flex-col gap-5">
+                            <div class="flex gap-3 items-center">
+                                <img class="w-[95px] rounded-[50%]" src="./images/profile.jpg" alt="">
+                                <div class="flex flex-col">
+                                    <span><a href="#" class="text-blue-800 font-semibold hover:underline">Marly M.</a></span>
+                                    <span class="text-gray-400">Moanda</span>
+                                </div>
+                            </div>
+                            <span class="flex items-center gap-2 p-[8px] rounded border-2 border-red-600"><i class="fas fa-bolt text-red-500"></i>Indisponible</span>
+                        </div>
+
+                        <button class="flex gap-3 items-center border-2 p-[8px] rounded border-blue-700 font-semibold text-blue-600 hover:bg-blue-700 hover:text-white duration-[0.5s]"><i class="fas fa-heart"></i>invitation à l'emploi</button>
+                    </div>
+
+                    <!-- texte -->
+                    <div class="flex flex-col gap-5">
+                        <!-- 10 et 20 -->
+                        <div class="flex gap-24 items-center">
+                            <span>projet: 5</span>
+                            <span>1500.000f acquis</span>
+                        </div>
+
+                        <div class="flex flex-col gap-4 text-[15px]">
+                            <p>Développeur le mieux noté 373 Projet achevé avec succès 100 % de taux 
+                                de réussite de l'emploi Développeur Web à plein temps, concepteur de 
+                                sites Web, développeur Web, développement de WordPress, développement...
+                            </p>
+                            <p>Suggérer parce-qu'il a travaillé sur <a href="#" class="text-blue-700 hover:text-blue-700 hover:underline">20 emplois qui corespond à votre rechercher</a></p>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">JavaScript</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Conception React</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Developpement Web</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">PHP</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">WordPress</a></span>
+                            <span class="bg-gray-200 px-[10px] py-[5px] rounded hover:font-semibold"><a href="#" class="hover:text-blue-600">Laravel</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <button class="font-semibold px-4 py-2 bg-blue-900 hover:bg-blue-700 duration-[0.5s] text-white rounded w-[50%]">Voir plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="info_section ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 info_links">
+              <h4>
+                Menu
+              </h4>
+              <ul>
+                <li class="active">
+                  <a href="index.html">
+                    Acceuil
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html">
+                    A propos
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="job.html">
+                    Taff
+                  </a>
+                </li>
+                <li>
+                  <a class="" href="freelancer.html">
+                    Freelancers
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>
+                Taff
+              </h4>
+              <p>
+                Established fact that a reader will be distracted by the readable content of a page when looking at its
+                layout. The point of using Lorem Ipsum
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="info_social">
+                <h4>
+                  Social
+                </h4>
+                <div class="social_container">
+                  <div>
+                    <a href="">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info_form">
+                <h4>
+                  Newsletter
+                </h4>
+                <form action="">
+                  <input type="text" placeholder="Entrer votre email" />
+                  <button type="submit">
+                    S'abonné
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- end info_section -->
+    
+    
+      <!-- footer section -->
+      <footer class="footer_section">
+        <div class="container">
+          <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href="https://html.design/">LeTaff</a>
+          </p>
+        </div>
+      </footer>
+      <!-- footer section -->
+    
+      <!-- jQery -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- nice select -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+</body>
+</html>
